@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Enrollment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1><i>College Enrolment Form</i></h1>
+    <table colspan="2">
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+        
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="middleName">Middle Name</label>
+                <input type="text" id="middleName" name="middleName">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="birthday">Birthday <span class="required">*</span></label>
+                <input type="date" id="birthday" name="birthday" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="birthplace">Birthplace <span class="required">*</span></label>
+                <input type="text" id="birthplace" name="birthplace" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="age">Age <span class="required">*</span></label>
+                <input type="text" id="age" name="age" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="yearLevel">Year Level <span class="required">*</span></label>
+                <select id="yearLevel" name="yearLevel" required>
+                    <option value="">Select Year Level</option>
+                    <option value="1st">1st Year</option>
+                    <option value="2nd">2nd Year</option>
+                    <option value="3rd">3rd Year</option>
+                    <option value="4th">4th Year</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="course">Course <span class="required">*</span></label>
+                <select id="course" name="course" required>
+                    <option value="">Select Course</option>
+                    <option value="ACT">ACT (Associate in Computer Technology)</option>
+                    <option value="BSOA">BSOA (Business Office Administration)</option>
+                    <option value="ENTREP">ENTREP (Entrepreneurship)</option>
+                    <option value="HM">HM (Hospitality Management)</option>
+                    <option value="CT">CT (Computer Technology)</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="citizenship">Citizenship <span class="required">*</span></label>
+                <input type="text" id="citizenship" name="citizenship" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <form action="" method="get">
+                <label for="sex">Sex <span class="required">*</span></label>
+                    <label><input type="radio" name="sex" value="male" required> Male</label>
+                    <label><input type="radio" name="sex" value="female"> Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="civilStatus">Civil Status <span class="required">*</span></label>
+                <input type="text" id="civilStatus" name="civilStatus" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="province">Province <span class="required">*</span></label>
+                <input type="text" id="province" name="province" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="region">Region <span class="required">*</span></label>
+                <input type="text" id="region" name="region" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="city">City <span class="required">*</span></label>
+                <input type="text" id="city" name="city" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="barangay">Barangay <span class="required">*</span></label>
+                <input type="text" id="barangay" name="barangay" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                 <form action="" method="get">
+                <label for="houseNo">House No./Street <span class="required">*</span></label>
+                <input type="text" id="houseNo" name="houseNo" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label for="contactNo">Contact No. <span class="required">*</span></label>
+                <input type="text" id="contactNo" name="contactNo" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <label>Credentials Submitted <span class="required">*</span></label>
+                    <label><input type="checkbox" name="credentials" value="form138" required> Form-138 (High School Card)</label>
+                    <label><input type="checkbox" name="credentials" value="form137"> Form-137</label>
+                    <label><input type="checkbox" name="credentials" value="birthCert"> Birth Certificate</label>
+                    <label><input type="checkbox" name="credentials" value="goodMoral"> Good Moral Certificate</label>
+                    <label><input type="checkbox" name="credentials" value="tor"> Certificate of Transfer Credentials</label>
+                    <label><input type="checkbox" name="credentials" value="transcript"> Transcript of Records</label>
+                    <label><input type="checkbox" name="credentials" value="permit"> Transfer Permit / Permit to Cross Enroll</label>
+                    <label><input type="checkbox" name="credentials" value="picture"> Picture</label>
+                    <label><input type="checkbox" name="credentials" value="psaNSO"> PSA / NSO</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="" method="get">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
